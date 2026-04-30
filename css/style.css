@@ -503,7 +503,7 @@ nav {
 }
 
 .intro-image-wrap::after {
-  content: 'SYSTEMS. STRATEGY. SCALE.';
+  content: 'HỆ THỐNG. CHIẾN LƯỢC. TĂNG TRƯỞNG.';
   position: absolute;
   bottom: -16px;
   right: -16px;
@@ -755,6 +755,24 @@ nav {
 
 .form-status.success { color: var(--rose-gold-light); }
 .form-status.error { color: #ff8d8d; }
+
+.form-consent {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.form-consent a {
+  color: var(--rose-gold-light);
+  border-bottom: 1px solid rgba(232,196,160,0.45);
+}
+
+.form-consent a:hover {
+  color: var(--text);
+  border-bottom-color: currentColor;
+}
 
 /* =========================================
    ABOUT PAGE
@@ -1327,6 +1345,68 @@ footer {
   color: var(--text-muted);
 }
 
+.footer-legal {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-legal a:hover { color: var(--text); }
+
+/* =========================================
+   LEGAL PAGES
+========================================= */
+.legal-page {
+  padding-top: 110px;
+}
+
+.legal-hero {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 70px 40px 36px;
+}
+
+.legal-hero h1 {
+  font-size: clamp(42px, 6vw, 78px);
+  margin-top: 10px;
+}
+
+.legal-updated {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.legal-content {
+  max-width: 980px;
+  margin: 0 auto 90px;
+  padding: 0 40px;
+}
+
+.legal-section {
+  border-top: 1px solid var(--border);
+  padding: 34px 0;
+}
+
+.legal-section h2 {
+  color: var(--rose-gold-light);
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.legal-section p,
+.legal-section li {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.legal-section ul {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
 /* =========================================
    ANIMATIONS
 ========================================= */
@@ -1406,6 +1486,8 @@ footer {
   .why-list { grid-template-columns: 1fr; }
   .services-list { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .legal-hero, .legal-content { padding-left: 20px; padding-right: 20px; }
   .studio-gallery { grid-template-columns: 1fr; }
   .who-grid { grid-template-columns: 1fr; }
   .home-form { padding: 40px 20px; }

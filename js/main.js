@@ -87,10 +87,10 @@ function isValidEmail(email) {
 }
 
 function validateLeadData(data) {
-  if (!data.fullName) return 'Please enter your full name.';
-  if (!data.phone) return 'Please enter your phone number.';
-  if (!isValidEmail(data.email)) return 'Please enter a valid email address.';
-  if (data.message.length > 1000) return 'Message must be 1000 characters or fewer.';
+  if (!data.fullName) return 'Vui lòng nhập họ và tên.';
+  if (!data.phone) return 'Vui lòng nhập số điện thoại.';
+  if (!isValidEmail(data.email)) return 'Vui lòng nhập email hợp lệ.';
+  if (data.message.length > 1000) return 'Nội dung cần tối đa 1000 ký tự.';
   return '';
 }
 
@@ -114,7 +114,7 @@ function setSubmitState(form, isSubmitting) {
   }
 
   submitButton.disabled = isSubmitting;
-  submitButton.innerHTML = isSubmitting ? 'Sending...' : submitButton.dataset.defaultText;
+  submitButton.innerHTML = isSubmitting ? 'Đang gửi...' : submitButton.dataset.defaultText;
 }
 
 async function submitLeadData(data) {
@@ -139,8 +139,8 @@ async function submitLeadData(data) {
 function showLeadSuccess(form, responseData) {
   const status = responseData && responseData.status;
   const message = status === 'duplicate' || status === 'updated'
-    ? 'You have already submitted this form. We will contact you soon.'
-    : 'Thank you! Your information has been submitted.';
+    ? 'Bạn đã gửi biểu mẫu này. Chúng tôi sẽ liên hệ lại sớm.'
+    : 'Cảm ơn bạn! Thông tin của bạn đã được gửi.';
 
   setFormStatus(form, message, 'success');
 
@@ -158,7 +158,7 @@ async function handleFormSubmit(event) {
   const data = getLeadFormData(form);
 
   if (data.website) {
-    setFormStatus(form, 'Thank you! Your information has been submitted.', 'success');
+    setFormStatus(form, 'Cảm ơn bạn! Thông tin của bạn đã được gửi.', 'success');
     form.reset();
     return;
   }
@@ -170,7 +170,7 @@ async function handleFormSubmit(event) {
   }
 
   if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes('PASTE_YOUR_GOOGLE_APPS_SCRIPT')) {
-    setFormStatus(form, 'Form is not connected yet. Please add your Google Apps Script URL in js/main.js.', 'error');
+    setFormStatus(form, 'Biểu mẫu chưa được kết nối. Vui lòng thêm Google Apps Script URL trong js/main.js.', 'error');
     return;
   }
 
@@ -182,11 +182,11 @@ async function handleFormSubmit(event) {
   try {
     const responseData = await submitLeadData(data);
     if (responseData && responseData.ok === false) {
-      throw new Error(responseData.error || 'Submission failed');
+      throw new Error(responseData.error || 'Gửi biểu mẫu thất bại');
     }
     showLeadSuccess(form, responseData);
   } catch (error) {
-    setFormStatus(form, 'Something went wrong. Please try again.', 'error');
+    setFormStatus(form, 'Có lỗi xảy ra. Vui lòng thử lại.', 'error');
   } finally {
     form.dataset.submitting = 'false';
     setSubmitState(form, false);
