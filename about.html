@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giới thiệu — JD-X Salon Systems</title>
+<script>
+  (function() {
+    var theme = null;
+    try { theme = localStorage.getItem('theme'); } catch (e) {}
+    if (theme === 'light' || theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+  })();
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="about">
+
+<!-- NAVIGATION -->
+<!-- Header -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/embedded-nail-2.jpg" alt="JD-X Salon Systems Logo">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" id="nav-home">Trang chủ</a></li>
+      <li><a href="about.html" class="active" id="nav-about">Giới thiệu</a></li>
+      <li><a href="studio.html" id="nav-studio">Nail Studio</a></li>
+      <li><a href="courses.html" id="nav-courses">Khóa học</a></li>
+      <li><a href="contact.html" id="nav-contact">Liên hệ</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Chuyển giao diện" aria-label="Chuyển giao diện">
+        <svg class="theme-icon theme-icon-moon" id="themeIcon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 14.6A8.4 8.4 0 0 1 9.4 3 9 9 0 1 0 21 14.6Z"></path>
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 4.5a1 1 0 0 0 1-1V2a1 1 0 1 0-2 0v1.5a1 1 0 0 0 1 1Zm0 15a1 1 0 0 0-1 1V22a1 1 0 1 0 2 0v-1.5a1 1 0 0 0-1-1Zm7.5-6.5H22a1 1 0 1 0 0-2h-2.5a1 1 0 1 0 0 2ZM2 13h2.5a1 1 0 1 0 0-2H2a1 1 0 1 0 0 2Zm15.7-5.3 1.1-1.1a1 1 0 1 0-1.4-1.4l-1.1 1.1a1 1 0 1 0 1.4 1.4ZM6.3 16.3l-1.1 1.1a1 1 0 1 0 1.4 1.4l1.1-1.1a1 1 0 1 0-1.4-1.4Zm12.5 1.1-1.1-1.1a1 1 0 1 0-1.4 1.4l1.1 1.1a1 1 0 1 0 1.4-1.4ZM7.7 6.3 6.6 5.2a1 1 0 0 0-1.4 1.4l1.1 1.1a1 1 0 1 0 1.4-1.4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"></path>
+        </svg>
+      </button>
+      <a class="btn-nav" href="contact.html">Đăng ký tư vấn</a>
+      <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main class="page active" id="page-about">
+<div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('assets/images/embedded-nail-1.jpg');background-position:center top;"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Giới thiệu</span>
+      <h1 style="font-size:clamp(36px,5vw,72px);color:var(--text)">Jennifer <em style="color:var(--rose-gold)">Daffern</em></h1>
+      <div style="font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--rose-gold-light);margin-top:12px">Nail Salon Owner & Business Mentor</div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="about-story">
+      <div class="about-image-stack">
+        <img class="img-main" src="assets/images/embedded-nail-3.jpg" alt="Jennifer Daffern">
+        <img class="img-secondary" src="assets/images/embedded-nail-1.jpg" alt="Jennifer Daffern">
+      </div>
+      <div>
+        <span class="section-label">Câu chuyện của tôi</span>
+        <h2 class="section-title">Từ thợ nail đến<br><em>chuyên gia vận hành</em></h2>
+        <p class="section-text">Tôi bắt đầu ngành nail từ vị trí thợ, làm trực tiếp tại nhiều tiệm khác nhau và trải qua đủ mọi khó khăn mà người trong nghề đều biết: giờ làm dài, khách không ổn định, không có hệ thống.</p>
+        <p class="section-text">Khi mở tiệm riêng, tôi nhận ra rằng làm giỏi nail là một chuyện — còn vận hành tiệm nail như một business thực sự là một kỹ năng hoàn toàn khác. Tôi đã phải tự học, thử nghiệm và xây dựng hệ thống từ đầu.</p>
+        <p class="section-text">JD-X Salon Systems ra đời từ những bài học đó — để bạn không phải mất thời gian và tiền bạc như tôi đã từng trải qua.</p>
+        <div class="rose-divider"><span>✦</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+          <div>
+            <div style="font-family:var(--font-heading);font-size:40px;font-weight:700;color:var(--rose-gold)">8+</div>
+            <div style="font-size:12px;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase">Năm trong ngành nail</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-heading);font-size:40px;font-weight:700;color:var(--rose-gold)">500+</div>
+            <div style="font-size:12px;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase">Học viên đã tốt nghiệp</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <div class="section-full">
+    <div class="inner">
+      <span class="section-label">Hành trình</span>
+      <h2 class="section-title" style="margin-bottom:0">Kinh nghiệm & <em>chuyên môn</em></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2015</div>
+          <div class="timeline-text">
+            <h4>Bắt đầu làm trong ngành nail</h4>
+            <p>Tích lũy kỹ thuật và kinh nghiệm phục vụ khách hàng tại nhiều tiệm nail chuyên nghiệp.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-text">
+            <h4>Mở tiệm nail đầu tiên</h4>
+            <p>Bắt đầu hành trình làm chủ tiệm, xây dựng hệ thống vận hành từ con số không.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-text">
+            <h4>Phát triển quy trình quản lý tiệm</h4>
+            <p>Hoàn thiện hệ thống quản lý nhân sự, chăm sóc khách hàng và kiểm soát tài chính tiệm nail.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2022</div>
+          <div class="timeline-text">
+            <h4>Ra mắt JD-X Salon Systems</h4>
+            <p>Chính thức chia sẻ kiến thức và kinh nghiệm qua chương trình đào tạo chủ tiệm nail chuyên nghiệp.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Nay</div>
+          <div class="timeline-text">
+            <h4>Đồng hành cùng hàng trăm chủ tiệm</h4>
+            <p>Tiếp tục phát triển chương trình và trực tiếp tư vấn cho các chủ tiệm nail trên khắp cả nước.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VALUES -->
+  <section class="section">
+    <div class="section-heading-centered">
+      <span class="section-label">Giá trị cốt lõi</span>
+      <h2 class="section-title">Tôi làm việc với<br>những <em>giá trị</em> này</h2>
+    </div>
+    <div class="values-grid" style="margin-top:60px">
+      <div class="value-card"><i class="fas fa-seedling"></i><h4>Thực tế</h4><p>Mọi nội dung đều đến từ kinh nghiệm vận hành tiệm thực tế, không phải lý thuyết</p></div>
+      <div class="value-card"><i class="fas fa-lightbulb"></i><h4>Rõ ràng</h4><p>Hướng dẫn từng bước cụ thể, dễ hiểu và có thể áp dụng ngay</p></div>
+      <div class="value-card"><i class="fas fa-heart"></i><h4>Tận tâm</h4><p>Tôi cam kết đồng hành và hỗ trợ học viên đến khi có kết quả thực sự</p></div>
+      <div class="value-card"><i class="fas fa-chart-bar"></i><h4>Kết quả</h4><p>Tập trung vào những thay đổi có thể đo lường được trong tiệm của bạn</p></div>
+      <div class="value-card"><i class="fas fa-eye"></i><h4>Minh bạch</h4><p>Chia sẻ cả thành công lẫn bài học thất bại để bạn học được nhiều hơn</p></div>
+      <div class="value-card"><i class="fas fa-users"></i><h4>Cộng đồng</h4><p>Xây dựng mạng lưới chủ tiệm nail hỗ trợ nhau cùng phát triển</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="section-full" style="text-align:center">
+    <div class="inner">
+      <span class="section-label">Bắt đầu ngay</span>
+      <h2 class="section-title">Bạn muốn học cách quản lý tiệm nail<br>từ <em>kinh nghiệm thực tế</em>?</h2>
+      <div style="display:flex;gap:16px;justify-content:center;margin-top:40px;flex-wrap:wrap">
+        <button class="btn-primary" onclick="showPage('courses')">Xem khóa học <i class="fas fa-arrow-right"></i></button>
+        <button class="btn-outline" onclick="showPage('contact')">Đăng ký tư vấn</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="assets/images/embedded-nail-2.jpg" alt="JD-X Salon Systems">
+      <p class="footer-tagline">JD-X Salon Systems — Hệ thống quản lý tiệm nail chuyên nghiệp. Systems. Strategy. Scale.</p>
+      <div class="footer-socials" aria-label="Liên kết mạng xã hội">
+        <a class="footer-social" href="https://www.facebook.com/jeni.monkelien?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook cá nhân">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 8.5h2.5V5H14c-2.8 0-4.5 1.7-4.5 4.4V12H7v3.5h2.5V22H13v-6.5h3l.5-3.5H13V9.8c0-.9.4-1.3 1-1.3Z"/>
+          </svg>
+        </a>
+        <a class="footer-social" href="https://www.facebook.com/JDB10XNails" target="_blank" rel="noopener noreferrer" aria-label="Fanpage Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 8.5h2.5V5H14c-2.8 0-4.5 1.7-4.5 4.4V12H7v3.5h2.5V22H13v-6.5h3l.5-3.5H13V9.8c0-.9.4-1.3 1-1.3Z"/>
+          </svg>
+        </a>
+        <a class="footer-social" href="https://www.instagram.com/jenniferdaffern?igsh=N3BhOGVqcm5zemxr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.8 3h8.4A4.8 4.8 0 0 1 21 7.8v8.4a4.8 4.8 0 0 1-4.8 4.8H7.8A4.8 4.8 0 0 1 3 16.2V7.8A4.8 4.8 0 0 1 7.8 3Zm0 2A2.8 2.8 0 0 0 5 7.8v8.4A2.8 2.8 0 0 0 7.8 19h8.4a2.8 2.8 0 0 0 2.8-2.8V7.8A2.8 2.8 0 0 0 16.2 5H7.8Zm8.7 2.6a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Trang web</h5>
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="about.html">Giới thiệu</a></li>
+        <li><a href="studio.html">Nail Studio</a></li>
+        <li><a href="courses.html">Khóa học</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Khóa học</h5>
+      <ul>
+        <li>Gói 6 tháng Coaching 1:1 </li>
+        <li>Gói Sale & Leadership + Tax Coaching 6 weeks</li>
+        <li>Gói Beginner Coaching</li>
+        <li>Gói Foundations & Private Coaching</li>
+        <li>Gói AI Receptionist Coaching</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Liên hệ</h5>
+      <ul>
+        <li>0901 234 567</li>
+        <li>jennifer@jdxsalonsystems.com</li>
+        <li>123 Đường Lê Lợi, Q.1</li>
+        <li>TP. Hồ Chí Minh</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 JD-X Salon Systems — Jennifer Daffern. All rights reserved.</span>
+    <span>Systems. Strategy. Scale.</span>
+  </div>
+</footer>
+
+<!-- SUCCESS MODAL -->
+<!-- Success Modal -->
+<div id="successModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:9999;display:none;align-items:center;justify-content:center">
+  <div style="background:var(--bg3);padding:60px;max-width:500px;width:90%;text-align:center;position:relative">
+    <button onclick="document.getElementById('successModal').style.display='none'" style="position:absolute;top:20px;right:20px;background:none;border:none;color:var(--text-muted);font-size:20px;cursor:pointer">✕</button>
+    <div style="color:var(--rose-gold);font-size:48px;margin-bottom:24px">✓</div>
+    <h3 style="font-family:var(--font-heading);font-size:28px;margin-bottom:16px">Cảm ơn bạn!</h3>
+    <p style="color:var(--text-muted);line-height:1.7;margin-bottom:32px">Tôi đã nhận được thông tin của bạn và sẽ liên hệ lại trong vòng 24 giờ để tư vấn chi tiết.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn-primary" onclick="showPage('courses');document.getElementById('successModal').style.display='none'">Xem khóa học</button>
+      <button class="btn-outline" onclick="document.getElementById('successModal').style.display='none'">Đóng</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
