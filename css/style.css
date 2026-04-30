@@ -34,13 +34,46 @@
   --bg2: #f0ebe4;
   --bg3: #e8e0d6;
   --bg4: #ddd4c7;
-  --text: #1a1410;
-  --text-muted: #7a6b5a;
-  --border: rgba(160,112,74,0.25);
-  --card-bg: rgba(0,0,0,0.03);
+  --text: #120d09;
+  --text-muted: #4f4034;
+  --rose-gold: #8f552f;
+  --rose-gold-light: #7b4325;
+  --rose-gold-dark: #63341b;
+  --gold: #8f622c;
+  --border: rgba(99,52,27,0.34);
+  --card-bg: rgba(55,32,20,0.06);
   --nav-bg: rgba(250,247,244,0.95);
-  --hero-overlay: linear-gradient(135deg, rgba(250,247,244,0.92) 0%, rgba(250,247,244,0.6) 60%, rgba(250,247,244,0.1) 100%);
+  --hero-overlay: linear-gradient(135deg, rgba(250,247,244,0.96) 0%, rgba(250,247,244,0.78) 58%, rgba(250,247,244,0.32) 100%);
   --section-alt: #f5f0ea;
+}
+
+[data-theme="light"] .nav-links a,
+[data-theme="light"] .section-text,
+[data-theme="light"] .footer-tagline,
+[data-theme="light"] .footer-col ul li,
+[data-theme="light"] .footer-bottom,
+[data-theme="light"] .form-consent,
+[data-theme="light"] .legal-section p,
+[data-theme="light"] .legal-section li {
+  color: #3f332b;
+}
+
+[data-theme="light"] .hero-desc {
+  color: #201711;
+  opacity: 1;
+}
+
+[data-theme="light"] .hero-subtitle,
+[data-theme="light"] .section-label,
+[data-theme="light"] .footer-col h5,
+[data-theme="light"] .form-group label {
+  color: #7a3f20;
+}
+
+[data-theme="light"] .form-group input::placeholder,
+[data-theme="light"] .form-group textarea::placeholder {
+  color: #6b5a4d;
+  opacity: 1;
 }
 
 /* =========================================
